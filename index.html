@@ -3,84 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наушники-клипсы Marvel Avengers - Стиль и Качество </title>
+    <title>Наушники-клипсы Marvel Avengers - Стиль и Качество</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c); /* Темно-красный градиент Marvel */
             color: white;
             text-align: center;
+            background-attachment: fixed; /* Фиксированный фон */
+        }
+        h1 {
+            font-size: 1.8em; /* Адаптивный размер заголовка */
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для лучшей читаемости */
+        }
+        h2 {
+            font-size: 1.3em;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            color: #FFD700; /* Золотой цвет, ассоциирующийся с Marvel */
         }
         .product-image {
             width: 100%;
             max-width: 300px;
-            border-radius: 15px;
-            margin: 20px 0;
+            /* border-radius: 15px; Убрано, если форма строгая */
+            margin: 15px auto; /* Центрирование */
+            border: 2px solid #FFD700; /* Золотая рамка */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         .cta-button {
-            background: #ff6b6b;
+            background: linear-gradient(to right, #FF4136, #85144b); /* Градиент красного и темно-розового */
             color: white;
             padding: 15px 30px;
             font-size: 18px;
             border: none;
-            border-radius: 25px;
+            border-radius: 30px; /* Более овальная форма */
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
             margin: 20px 0;
             font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease; /* Плавные переходы */
         }
-        .features {
-            background: rgba(255,255,255,0.1);
+        .cta-button:hover {
+             transform: scale(1.05); /* Легкое увеличение при наведении */
+             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .features, .delivery {
+            background: rgba(0, 0, 0, 0.3); /* Темнее фон для контраста */
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             margin: 20px 0;
-        }
-        .delivery {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
             text-align: left;
-            font-size: 14px;
+            border: 1px solid rgba(255, 215, 0, 0.3); /* Светлая золотая граница */
         }
-        .delivery h3 {
+        .features h3, .delivery h3 {
             text-align: center;
             margin-top: 0;
+            color: #FFD700;
+            font-size: 1.4em;
+        }
+        .features p, .delivery p, .delivery li {
+             margin: 10px 0;
+        }
+        .features p:before {
+             content: "✓ "; /* Заменяем буллеты на галочки */
+             color: #7CFC00; /* Ярко-зеленый цвет */
+             font-weight: bold;
         }
         .delivery ul {
             padding-left: 20px;
-            margin-bottom: 0;
+            margin-bottom: 15px;
+        }
+        .delivery li strong {
+             color: #FFD700; /* Выделение ключевых слов золотым */
+        }
+        .or-text {
+            margin: 10px 0;
+            font-style: italic;
+            color: #ccc;
+        }
+        .contact-info {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        .contact-info a {
+            color: #64B5F6; /* Голубой цвет для ссылок */
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .urgent {
+            color: #FF5252; /* Ярко-красный для срочной информации */
+            font-weight: bold;
+            animation: pulse 2s infinite; /* Анимация пульсации */
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        /* Адаптивность для очень маленьких экранов */
+        @media (max-width: 400px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.1em;
+            }
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>🎧 Наушники-клипсы MARVEL Avengers</h1>
+    <h1> Наушники-клипсы MARVEL Avengers</h1>
     <h2>Стиль и Технологии Будущего!</h2>
-    
+
     <!-- ФОТО ВАШИХ НАУШНИКОВ -->
-    <img src="sku1.38+.png" alt="Наушники Avengers" class="product-image">
-    
+    <img src="sku1.38+.png" alt="Наушники Marvel Avengers" class="product-image">
+
     <div class="features">
         <h3>🌟 Почему выбирают нас:</h3>
-        <p>✅ Стиль Iron Man, Black Panther, Captain America</p>
-        <p>✅ Беспроводная свобода движений</p>
-        <p>✅ Быстрая зарядка и до 4 часов работы</p>
-        <p>✅ Легкие и удобные для всех возрастов</p>
-        <p>✅ Совместимы со всеми устройствами с Bluetooth</p>
-        <p>🛡️ Гарантия 6 месяцев</p>
+        <p> Стиль Iron Man, Black Panther, Captain America</p>
+        <p>Беспроводная свобода движений</p>
+        <p>Быстрая зарядка и до 4 часов работы</p>
+        <p>Легкие и удобные для всех возрастов</p>
+        <p>Совместимы со всеми устройствами с Bluetooth</p>
+        <p><strong>🛡️ Гарантия 6 месяцев</strong></p>
     </div>
-    
-    <h2>🔥 Эксклюзивный подарок каждому покупателю!</h2>
-    
-    <a href="https://t.me/ваш_телеграм_логин" class="cta-button">
-        🚀 ЗАКАЗАТЬ СЕЙЧАС
-    </a>
-    
-    <p>или напишите нам в Direct Instagram</p>
+
+    <h2>🎁 Приятный подарок каждому покупателю!</h2>
+
+    <a href="https://www.instagram.com/direct/new/" class="cta-button" target="_blank">
+    🚀 ЗАКАЗАТЬ СЕЙЧАС
+</a>
+
+    <p class="or-text">или напишите нам в Direct Instagram</p>
 
     <div class="delivery">
         <h3>📦 Доставка и Упаковка</h3>
@@ -89,13 +161,13 @@
             <li><strong>Белпочта</strong> - традиционно и проверенно</li>
             <li><strong>Курьер по Минску</strong> - быстро и удобно прямо до двери!</li>
         </ul>
-        <p><strong>🎁 Упаковка включает:</strong> Защитную упаковку, Оригинальную коробку с логотипом Marvel, <strong>Эксклюзивный подарок</strong> с каждой покупкой!, Гарантийный талон и инструкцию.</p>
+        <p><strong>🎁 Упаковка включает:</strong> Защитную упаковку, Оригинальную коробку с логотипом Marvel, <strong>Подарок</strong> с каждой покупкой!, Гарантийный талон и инструкцию.</p>
     </div>
-    
-    <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; margin-top: 20px;">
+
+    <div class="contact-info">
         <h3>📞 Контакты: +375-29-104-66-36</h3>
-        <p>📸 Instagram: <a href="https://instagram.com/marvel_sound_store" style="color: white;">@marvel_sound_store</a></p>
-        <p>⏰ Осталось всего 50 штук по акции!</p>
+        <p>📸 Instagram: <a href="https://www.instagram.com/marvel_sound_store" target="_blank">@marvel_sound_store</a></p>
+        <p class="urgent">⏰ Осталось всего 50 штук по акции!</p>
         <p>🚚 Доставка по всей Беларуси</p>
     </div>
 </body>
